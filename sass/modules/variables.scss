@@ -4,3 +4,16 @@ $green: #088140;
 // device
 $more-than-tb: '(min-width: 768px)';
 $less-than-tb: '(max-width: 767px)';
+
+//font-color
+$font-main-color: #4E4E4E;
+
+//font-fmaily
+$en-font: 'PT Mono','Menlo','Georgia', sans-serif;
+$ja_font: 'TsukuARdGothic-Regular','MS UI Gothic','ヒラギノ角ゴシック','Hiragino Sans',sans-serif;
+
+//fontsize
+@mixin fontsize($size: 24) {
+  font-size: $size + px;
+  font-size: ($size / 16) * 1rem;
+}

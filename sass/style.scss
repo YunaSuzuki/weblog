@@ -1,6 +1,11 @@
 @import 'compass';
 @import 'modules/variables.scss';
 
+body{
+  background-color: #F8F8EF;
+  color: $font-main-color;
+}
+
 ul{
   list-style: none;
 }
@@ -21,6 +26,7 @@ ul{
   h1{
     margin: 0;
     letter-spacing: 1px;
+    font-family: $en_font; 
     
     @media #{$more-than-tb}{
       line-height: 300px;
@@ -126,5 +132,35 @@ ul{
       }
     }
     
+  }
+}
+
+.contents-list{
+  position: relative;
+  margin: 16px 0;
+  text-align: center;
+  
+  &__title{
+    padding: 0 8px;
+    font-family: $ja_font;
+    background-color: #F8F8EF;
+    
+    @media #{$more-than-tb}{
+      @include fontsize(24);
+    }
+    
+    @media #{$less-than-tb}{
+      @include fontsize(18);
+    }
+    
+    &:before{
+      position: absolute;
+      top: 50%;
+      content: '';
+      display: block;
+      width: 100%;
+      border-bottom: 1px solid $font-main-color;
+      z-index: -1;
+    }
   }
 }
