@@ -1,1 +1,130 @@
 @import 'compass';
+@import 'modules/variables.scss';
+
+ul{
+  list-style: none;
+}
+
+.header{
+  position: relative;
+  background-color: $green;
+  color: white;
+  text-align: center;
+  
+  @media #{$more-than-tb}{
+    height: 300px;
+  }
+  @media #{$less-than-tb}{
+    height: 160px;
+  }
+  
+  h1{
+    margin: 0;
+    letter-spacing: 1px;
+    
+    @media #{$more-than-tb}{
+      line-height: 300px;
+    }
+    @media #{$less-than-tb}{
+      line-height: 160px;
+    }
+  }
+  
+  &__bottom-group{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: space-around;
+    
+    &__left{
+      display: flex;
+      @include border-radius(5px);
+      
+      @media #{$more-than-tb}{
+        width: 80px;
+        height: 40px;
+        background-color: #D57B00;
+      }
+      @media #{$less-than-tb}{
+        width: 56px;
+        height: 32px;
+        background-color: #D57B00;
+      }
+      
+      .eraser-left, .eraser-right{
+        display: inline-block;
+        width: 50%;
+        height: 100%;
+      }
+      
+      .eraser-left{
+        border-right: 8px solid #585858;
+      }
+
+    }
+    
+    &__right{
+      @media #{$more-than-tb}{
+        width: 40%;
+      }
+      
+      @media #{$more-than-tb}{
+        width: 70%;
+      }
+      
+      .chalks{
+        display: inline-block;
+        
+        @media #{$less-than-tb}{
+          height: 100%;
+          width: 30px;
+          margin: 0 4px;
+        }
+        
+        @media #{$more-than-tb}{
+          height: 100%;
+          width: 56px;
+          margin: 0 4px;
+        }
+      }
+      
+      @media #{$less-than-tb}{
+        #chalk--white{
+          border-bottom: 10px solid #fff;
+        }
+        
+        #chalk--pink{
+          border-bottom: 10px solid #FDAEF1;
+        }
+        
+        #chalk--blue{
+          border-bottom: 10px solid #56B6E8;
+        }
+        
+        #chalk--yellow{
+          border-bottom: 10px solid #FFF39A;
+        }
+      }
+      
+      @media #{$more-than-tb}{
+        #chalk--white{
+          border-bottom: 10px solid #fff;
+        }
+        
+        #chalk--pink{
+          border-bottom: 10px solid #FDAEF1;
+        }
+        
+        #chalk--blue{
+          border-bottom: 10px solid #56B6E8;
+        }
+        
+        #chalk--yellow{
+          border-bottom: 10px solid #FFF39A;
+        }
+      }
+    }
+    
+  }
+}
