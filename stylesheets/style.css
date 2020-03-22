@@ -6,6 +6,9 @@ body {
 ul {
   list-style: none; }
 
+p {
+  margin: 0; }
+
 .header {
   position: relative;
   background-color: #088140;
@@ -115,5 +118,54 @@ ul {
       width: 100%;
       border-bottom: 1px solid #4E4E4E;
       z-index: -1; }
+
+@media (min-width: 768px) {
+  .contents {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; } }
+.contents .contents__box {
+  padding: 16px;
+  background-color: #fff;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px; }
+  @media (min-width: 768px) {
+    .contents .contents__box {
+      width: 49%;
+      margin: 8px 0; } }
+  @media (max-width: 767px) {
+    .contents .contents__box {
+      margin: 16px 0; } }
+  .contents .contents__box__image {
+    width: 100%; }
+  @media (max-width: 767px) {
+    .contents .contents__box__subtitle {
+      font-size: 12px;
+      font-size: 0.75rem; } }
+  @media (min-width: 768px) {
+    .contents .contents__box__subtitle {
+      font-size: 14px;
+      font-size: 0.875rem; } }
+  @media (max-width: 767px) {
+    .contents .contents__box__maintitle {
+      font-size: 16px;
+      font-size: 1rem; } }
+  @media (min-width: 768px) {
+    .contents .contents__box__maintitle {
+      font-size: 18px;
+      font-size: 1.125rem; } }
+  .contents .contents__box__tag {
+    margin-right: 8px;
+    color: #898989;
+    font-family: "PT Mono", "Menlo", "Georgia", sans-serif; }
+    @media (max-width: 767px) {
+      .contents .contents__box__tag {
+        font-size: 10px;
+        font-size: 0.625rem; } }
+    @media (min-width: 768px) {
+      .contents .contents__box__tag {
+        font-size: 14px;
+        font-size: 0.875rem; } }
 
 /*# sourceMappingURL=style.css.map */

@@ -10,6 +10,10 @@ ul{
   list-style: none;
 }
 
+p{
+  margin: 0;
+}
+
 .header{
   position: relative;
   background-color: $green;
@@ -161,6 +165,66 @@ ul{
       width: 100%;
       border-bottom: 1px solid $font-main-color;
       z-index: -1;
+    }
+  }
+}
+
+.contents{
+  @media #{$more-than-tb}{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .contents__box{
+    
+    padding: 16px;
+    background-color: #fff;
+    @include border-radius(3px);
+    
+    @media #{$more-than-tb}{
+      width: 49%;
+      margin: 8px 0;
+    }
+    
+    @media #{$less-than-tb}{
+      margin: 16px 0;
+    }
+    
+    &__image{
+      width: 100%;
+    }
+    
+    &__subtitle{
+      @media #{$less-than-tb}{
+        @include fontsize(12);
+      }
+      @media #{$more-than-tb}{
+        @include fontsize(14);
+      }
+    }
+    
+    &__maintitle{
+      @media #{$less-than-tb}{
+        @include fontsize(16);
+      }
+      @media #{$more-than-tb}{
+        @include fontsize(18);
+      }
+    }
+    
+    &__tag{
+      margin-right: 8px;
+      color: #898989;
+      font-family: $en_font;
+      
+      @media #{$less-than-tb}{
+        @include fontsize(10);
+      }
+      
+      @media #{$more-than-tb}{
+        @include fontsize(14);
+      }
     }
   }
 }
