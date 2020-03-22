@@ -34,6 +34,7 @@ p{
     font-family: $en_font; 
     
     @media #{$more-than-tb}{
+      @include fontsize(42);
       line-height: 300px;
     }
     @media #{$less-than-tb}{
@@ -198,6 +199,9 @@ p{
     }
     
     &__subtitle{
+      font-family: $ja_font;
+      font-weight: bold;
+      
       @media #{$less-than-tb}{
         @include fontsize(12);
       }
@@ -207,6 +211,9 @@ p{
     }
     
     &__maintitle{
+      font-family: $ja_font;
+      font-weight: bold;
+      
       @media #{$less-than-tb}{
         @include fontsize(16);
       }

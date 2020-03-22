@@ -27,6 +27,8 @@ p {
     font-family: "PT Mono", "Menlo", "Georgia", sans-serif; }
     @media (min-width: 768px) {
       .header h1 {
+        font-size: 42px;
+        font-size: 2.625rem;
         line-height: 300px; } }
     @media (max-width: 767px) {
       .header h1 {
@@ -141,22 +143,28 @@ p {
   .contents .contents__box__image {
     width: 100%;
     margin-bottom: 16px; }
-  @media (max-width: 767px) {
-    .contents .contents__box__subtitle {
-      font-size: 12px;
-      font-size: 0.75rem; } }
-  @media (min-width: 768px) {
-    .contents .contents__box__subtitle {
-      font-size: 14px;
-      font-size: 0.875rem; } }
-  @media (max-width: 767px) {
-    .contents .contents__box__maintitle {
-      font-size: 16px;
-      font-size: 1rem; } }
-  @media (min-width: 768px) {
-    .contents .contents__box__maintitle {
-      font-size: 18px;
-      font-size: 1.125rem; } }
+  .contents .contents__box__subtitle {
+    font-family: "TsukuARdGothic-Regular", "MS UI Gothic", "ヒラギノ角ゴシック", "Hiragino Sans", sans-serif;
+    font-weight: bold; }
+    @media (max-width: 767px) {
+      .contents .contents__box__subtitle {
+        font-size: 12px;
+        font-size: 0.75rem; } }
+    @media (min-width: 768px) {
+      .contents .contents__box__subtitle {
+        font-size: 14px;
+        font-size: 0.875rem; } }
+  .contents .contents__box__maintitle {
+    font-family: "TsukuARdGothic-Regular", "MS UI Gothic", "ヒラギノ角ゴシック", "Hiragino Sans", sans-serif;
+    font-weight: bold; }
+    @media (max-width: 767px) {
+      .contents .contents__box__maintitle {
+        font-size: 16px;
+        font-size: 1rem; } }
+    @media (min-width: 768px) {
+      .contents .contents__box__maintitle {
+        font-size: 18px;
+        font-size: 1.125rem; } }
   .contents .contents__box__tag {
     margin-right: 8px;
     color: #898989;
