@@ -4,7 +4,8 @@ body {
   color: #4E4E4E; }
 
 ul {
-  list-style: none; }
+  list-style: none;
+  padding: 0; }
 
 p {
   margin: 0; }
@@ -138,7 +139,8 @@ p {
     .contents .contents__box {
       margin: 16px 0; } }
   .contents .contents__box__image {
-    width: 100%; }
+    width: 100%;
+    margin-bottom: 16px; }
   @media (max-width: 767px) {
     .contents .contents__box__subtitle {
       font-size: 12px;
@@ -167,5 +169,51 @@ p {
       .contents .contents__box__tag {
         font-size: 14px;
         font-size: 0.875rem; } }
+
+.sidebar {
+  margin: 16px 0; }
+  .sidebar__box {
+    background-color: #fff; }
+    .sidebar__box__title {
+      padding: 8px 16px;
+      background-color: #FFC14B;
+      color: #fff;
+      font-family: "TsukuARdGothic-Regular", "MS UI Gothic", "ヒラギノ角ゴシック", "Hiragino Sans", sans-serif;
+      font-weight: bold; }
+    .sidebar__box__wrapper {
+      padding: 16px; }
+    .sidebar__box__list {
+      font-family: "PT Mono", "Menlo", "Georgia", sans-serif;
+      word-wrap: break-word; }
+      .sidebar__box__list li {
+        margin: 8px 0; }
+        .sidebar__box__list li i {
+          margin-right: 8px; }
+    .sidebar__box__text {
+      margin-bottom: 16px;
+      font-family: "TsukuARdGothic-Regular", "MS UI Gothic", "ヒラギノ角ゴシック", "Hiragino Sans", sans-serif; }
+    .sidebar__box .icons-box ul {
+      display: flex; }
+      .sidebar__box .icons-box ul li {
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        margin: 2px;
+        text-align: center;
+        -moz-border-radius: 20px;
+        -webkit-border-radius: 20px;
+        border-radius: 20px; }
+      .sidebar__box .icons-box ul #twitter-bg {
+        background-color: #1592E6; }
+      .sidebar__box .icons-box ul #instagram-bg {
+        background: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuMCIgeTE9IjAuMCIgeDI9IjEuMCIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzQyN2VmZiIvPjxzdG9wIG9mZnNldD0iNzAlIiBzdG9wLWNvbG9yPSIjZjEzZjc5Ii8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIgLz48L3N2Zz4g');
+        background: -moz-linear-gradient(315deg, #427eff 0%, #f13f79 70%);
+        background: -webkit-linear-gradient(315deg, #427eff 0%, #f13f79 70%);
+        background: linear-gradient(135deg, #427eff 0%, #f13f79 70%); }
+      .sidebar__box .icons-box ul .icon {
+        color: #fff;
+        line-height: 40px;
+        font-size: 24px;
+        font-size: 1.5rem; }
 
 /*# sourceMappingURL=style.css.map */

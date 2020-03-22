@@ -8,6 +8,7 @@ body{
 
 ul{
   list-style: none;
+  padding: 0;
 }
 
 p{
@@ -193,6 +194,7 @@ p{
     
     &__image{
       width: 100%;
+      margin-bottom: 16px;
     }
     
     &__subtitle{
@@ -227,4 +229,78 @@ p{
       }
     }
   }
+}
+
+//sidebar
+.sidebar{
+  margin: 16px 0;
+  
+  &__box{
+    background-color: #fff;
+    
+    &__title{
+      padding: 8px 16px;
+      background-color: #FFC14B;
+      color: #fff;
+      font-family: $ja-font;
+      font-weight: bold;
+    }
+    
+    &__wrapper{
+      padding: 16px;
+    }
+    
+    &__list{
+      font-family: $en_font;
+      word-wrap: break-word;
+      
+      li{
+        margin: 8px 0;
+        
+        i{
+          margin-right: 8px;
+        }
+      }
+    }
+    
+    &__text{
+      margin-bottom: 16px;
+      font-family: $ja_font;
+    }
+    
+    .icons-box{
+      ul{
+        display: flex;
+        
+        li{
+          display: inline-block;
+          width: 40px;
+          height: 40px;
+          margin: 2px;
+          text-align: center;
+          @include border-radius(20px);
+        }
+        
+        #twitter-bg{
+          background-color: #1592E6;
+        }
+        
+        #instagram-bg{
+          @include background(linear-gradient(135deg, #427eff 0%, #f13f79 70%));
+        }
+        
+        #portfolio-bg{
+          
+        }
+        
+        .icon{
+          color: #fff;
+          line-height: 40px;
+          @include fontsize(24);
+        }
+      }
+    }
+    
+  }
+  
 }
