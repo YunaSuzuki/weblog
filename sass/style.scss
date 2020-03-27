@@ -262,7 +262,7 @@ p{
       word-wrap: break-word;
       
       li{
-        margin: 8px 0;
+        margin: 16px 0;
         
         i{
           margin-right: 8px;
@@ -271,8 +271,9 @@ p{
     }
     
     &__text{
-      margin-bottom: 16px;
+      margin-bottom: 24px;
       font-family: $ja_font;
+      line-height: 24px;
     }
     
     .icons-box{
@@ -324,5 +325,22 @@ p{
     line-height: 80px;
     color: #fff;
     @include fontsize(14);
+  }
+}
+
+//position.html
+.contents-wrapper{
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  
+  @media #{$more-than-tb}{
+    margin-top: 16px;
+    padding: 56px 16px;
+  }
+  
+  @media #{$less-than-tb}{
+    margin-top: 16px;
+    padding: 40px 8px;
   }
 }

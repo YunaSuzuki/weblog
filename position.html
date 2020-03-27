@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>WEBLOG</title>
+    <!--bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!--stylesheet-->
+    <link rel="stylesheet" href="stylesheets/normalize.css"/>
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="stylesheets/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <h1>WEBLOG</h1>
+      <div class="header__bottom-group">
+        <div class="header__bottom-group__left">
+          <span class="eraser-left"></span>
+          <span class="eraser-right"></span>
+        </div>
+        <div class="header__bottom-group__right">
+          <span class="chalks" id='chalk--white'></span>
+          <span class="chalks" id='chalk--pink'></span>
+          <span class="chalks" id='chalk--blue'></span>
+          <span class="chalks" id='chalk--yellow'></span>
+        </div>
+      </div>
+    </header>
+    <main class="container">
+      <div class="row">
+        <div class="col-md-9"><!--↓↓↓_____main(9)_____↓↓↓-->
+          <div class="contents-wrapper">
+          <!--ここから下が記事↓↓　________________________________-->
+            <h1>positionプロパティのちがい＆使い方</h1>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <span>
+              今日はコーディングにまだ慣れていない方が、
+              掴みにくいpositionプロパティについて
+              解説したいと思います。
+            </span>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <span>
+              これから、みなさんがHTML/CSSでコーディングする際に
+              お役に立てれば幸いです◎
+            </span>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <h2>positionプロパティとは？</h2>
+            <br/>
+            <br/>
+            <span>
+              名前のとおり、要素の位置を調整するものです^ ^
+              そして、位置にも色々と種類があるんです！
+            </span>
+            <br/>
+            <br/>
+            <span>
+              ・fixed<br/>
+              ・relative<br/>
+              ・absolute<br/>
+            </span>
+            <br/>
+            <br/>
+            <span>
+              順番に見ていきましょう^^
+            </span>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <h3>fixed</h3>
+            <br/>
+            <br/>
+            <span>
+              fixedは固定された、不動の、という意味のとおり
+            </span>
+            <p>指定した位置から絶対に動きません！！</p>
+            <p>動かざることfixedのごとしです！！</p>
+          <!--ここまでが記事内容↑↑________________________________-->
+          </div>
+        </div><!--↑↑↑_____main(9)_____↑↑↑-->
+        <div class="col-md-3"><!--_____sidebar(3)_____-->
+          <div class="sidebar">
+            <div class="sidebar__box">
+              <p class="sidebar__box__title">カテゴリー</p>
+              <ul class="sidebar__box__list sidebar__box__wrapper">
+                <li><i class="fas fa-chevron-right"></i>HTML</li>
+                <li><i class="fas fa-chevron-right"></i>CSS</li>
+                <li><i class="fas fa-chevron-right"></i>JavaScript (jQuery)</li>
+                <li><i class="fas fa-chevron-right"></i>Ruby on Rails</li>
+              </ul>
+            </div>
+            
+            <div class="sidebar__box">
+              <p class="sidebar__box__title">プロフィール</p>
+              <div class="sidebar__box__wrapper">
+                <div class="sidebar__box__text">
+                  初めてプログラミング・デザインを学ぶ方目線で
+                  難しい場所・わかりづらい部分をわかりやすく解説。
+                  <p>『わからない…そうだ、WEBLOG見よう！』</p>
+                  こんなブログを目指します◎
+                </div>
+                <div class="icons-box">
+                  <ul>
+                    <li id="twitter-bg"><i class="fab fa-twitter icon"></i></li>
+                    <li id="instagram-bg"><i class="fab fa-instagram icon"></i></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <span class="footer__text">All rights reserved.</span>
+    </footer>
+  </body>
+</html>
